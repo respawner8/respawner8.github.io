@@ -1,25 +1,167 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>: Respawner :</title>
-        <link rel="icon" href="icon.png">
-        <h1 style="color: darkviolet ;text-align: center">: Profile :</h1>
-        <meta name="description" content="My profile" >
-    </head>
-    <body style="background-color:burlywood">
-        
-        <div>
-            <center><img src="pic.jpg" alt="Profile pic" height="200px" width="200px" ></center>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Anand | Resume</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7fa;
+            color: #22223b;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+            padding: 40px 32px;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 16px auto;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid #c9ada7;
+        }
+        h1, h2 {
+            color: #4b28a4;
+            margin-bottom: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .contact {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #371e77;
+        }
+        .contact a {
+            color: #4b28a4;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .section {
+            margin-bottom: 32px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            color: #4b28a4;
+            border-bottom: 2px solid #c9ada7;
+            padding-bottom: 4px;
+            margin-bottom: 16px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .exp-role {
+            font-weight: bold;
+            color: #22223b;
+        }
+        .exp-company {
+            color: #371e77;
+            font-weight: bold;
+        }
+        .exp-date {
+            float: right;
+            color: #4b28a4;
+            font-size: 0.95em;
+        }
+        .education-item, .project-item {
+            margin-bottom: 12px;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 16px 4px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Nikhil Anand</h1>
+        <div class="contact">
+            <span>nikhil8.anand@gmail.com</span> |
+            <span>+91-9664371662</span><br>
+            <a href="https://github.com/respawner8" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/respawner8" target="_blank">LinkedIn</a>
         </div>
-        
-        <div style="text-align: center"><h3>Nikhil Anand</h3></div>
-
-        <div style="text-align:center; color: blue">
-            <h3>Intro :</h3><h5>I am a college student pursuing B.tech in computer science form Birla Institute of Technology, Mesra</h5>
-            <h3>Interests :</h3><h5>I like to play football and cricket , and also like to play online competitive games like csgo and pubg. Apart from this I like coding and playing with computers.  </h5>
-            <h4><a href="https://www.facebook.com/nikhilanand26" target="_blank">Link to my facebook profile.</a></h4>
+        <div class="section">
+            <div class="section-title">Profile</div>
+            <p>I am a software engineer with experience at Microsoft and MakeMyTrip, passionate about building impactful products. I enjoy coding, AI, and technology, and have a strong background in computer science from Birla Institute of Technology, Mesra.</p>
         </div>
-
-    </body>
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <ul>
+                <li><b>Languages:</b> C/C++, Java, Python, JavaScript, TypeScript, SQL</li>
+                <li><b>Technologies & Tools:</b> React, Node.js, AI Prompt, Github Copilot, Cursor, Chat Gpt, AI Agents, Java, Kotlin, Redux, Tailwind, Express.js, MongoDB, RESTful APIs, Power Bi</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+            <div class="exp-company">Microsoft, Hyderabad <span class="exp-date">Apr 2024 - Present</span></div>
+            <div class="exp-role">Software Engineer - M365 Copilot Web and Desktop</div>
+            <ul>
+                <li>Designed and implemented Windows App pinning functionality for Taskbar, StartMenu and Desktop Shortcut. Achieved success rate of 22%.</li>
+                <li>Redesigned Telemetry data flow for windows app and enabled EUDB boundary for EUPI data logging.</li>
+                <li>Implemented caching for metaOsApps, reducing mosapps p95 from 10 seconds to 2 seconds for all commercial users.</li>
+                <li>Developed copilot routing and pinning functionality for both consumer and commercial users.</li>
+                <li>Resolved critical bugs related to customer escalations, improving customer satisfaction.</li>
+            </ul>
+            <div class="exp-company">Microsoft, Hyderabad <span class="exp-date">Aug 2022 - Mar 2024</span></div>
+            <div class="exp-role">Software Engineer - M365 Copilot Android</div>
+            <ul>
+                <li>Worked on dB based registry module for multi-process data sharing, migrated registry for 100M+ users, improving performance and reducing ANRs.</li>
+                <li>Created dashboards/scripts to reduce bug triaging and RCA from 2 days to a few hours.</li>
+                <li>Delivered Copilot FRE feature on Union Android platform for millions of users.</li>
+                <li>Onboarded third-party cloud providers (egnyte, dingtalk).</li>
+                <li>Developed group join feature via link, QR code, and pin; worked on referral flow end-to-end.</li>
+                <li>Worked on bugs to improve user experience and reduce crashes.</li>
+            </ul>
+            <div class="exp-company">MakeMyTrip, Bangalore <span class="exp-date">Jan 2022 - Jun 2022</span></div>
+            <div class="exp-role">Software Engineer Intern - Flights</div>
+            <ul>
+                <li>Added train journey as part of a flight connection through client backend.</li>
+                <li>Revamped the return flight page for partner website used by 50,000+ travel agents.</li>
+                <li>Learned good coding practices, scalable code writing, and debugging.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <b>Birla Institute of Technology, Mesra</b> <span class="exp-date">Jul 2018 - May 2022</span><br>
+                B.Tech. in Computer Science and Engineering | <b>CGPA: 8/10</b><br>
+                <i>Coursework:</i> OOP, Databases, Discrete Maths, Data Structures & Algorithms, OS, Computer Networks
+            </div>
+            <div class="education-item">
+                <b>D.A.V Public School, Bistupur</b> <span class="exp-date">Apr 2015 - Mar 2017</span><br>
+                Senior Secondary - PCMC | <b>Percentage: 82.2</b><br>
+                <i>Coursework:</i> Physics, Chemistry, Maths, English, Computer Science
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <div class="project-item">
+                <b>Dance.AI (2024):</b> Dance-focused social media and learning platform with AI-driven feedback, instructional videos, and community features.
+            </div>
+            <div class="project-item">
+                <b>NagarPalika (2019):</b> Web platform for posting and tracking local issues, with Google Maps API integration and Node.js/MongoDB backend.
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Contact</div>
+            <p>Email: <a href="mailto:nikhil8.anand@gmail.com">nikhil8.anand@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919664371662">+91-9664371662</a></p>
+            <p>GitHub: <a href="https://github.com/respawner8" target="_blank">github.com/respawner8</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/respawner8" target="_blank">linkedin.com/in/respawner8</a></p>
+        </div>
+    </div>
+</body>
 </html>
